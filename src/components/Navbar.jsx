@@ -1,27 +1,29 @@
-const ProductCard = ({ name, price, image }) => {
+const Navbar = () => {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-      <img
-        src={image}
-        alt={name}
-        className="h-52 w-full object-cover"
-      />
+    <nav className="bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-      <div className="p-5">
-        <h3 className="text-xl font-bold">
-          {name}
-        </h3>
+        <h1 className="text-2xl font-bold text-blue-600">
+          Stationary Mart
+        </h1>
 
-        <p className="text-blue-600 font-semibold mt-2">
-          ₹{price}
-        </p>
+        <ul className="hidden md:flex gap-8 font-medium">
+          <li className="cursor-pointer hover:text-blue-600">
+            Home
+          </li>
 
-        <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 cursor-pointer">
-          View Product
-        </button>
+          <li className="cursor-pointer hover:text-blue-600">
+            Products
+          </li>
+
+          <li className="cursor-pointer hover:text-blue-600">
+            Contact
+          </li>
+        </ul>
+
       </div>
-    </div>
+    </nav>
   );
 };
 
-export default ProductCard;
+export default Navbar;
