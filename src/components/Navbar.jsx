@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -7,19 +7,27 @@ const Navbar = () => {
           Stationary Mart
         </h1>
 
-        <ul className="hidden md:flex gap-8 font-medium">
-          <li className="cursor-pointer hover:text-blue-600">
-            Home
-          </li>
+        <div className="flex items-center gap-6">
 
-          <li className="cursor-pointer hover:text-blue-600">
-            Products
-          </li>
+          <ul className="hidden md:flex gap-8 font-medium">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Contact</li>
+          </ul>
 
-          <li className="cursor-pointer hover:text-blue-600">
-            Contact
-          </li>
-        </ul>
+          <div className="relative">
+
+            <span className="text-3xl">
+              🛒
+            </span>
+
+            <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+              {cartCount}
+            </span>
+
+          </div>
+
+        </div>
 
       </div>
     </nav>
