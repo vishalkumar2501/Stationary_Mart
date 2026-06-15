@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
 
 function App() {
+
+  const [cartCount, setCartCount] = useState(0);
+
+  const addToCart = () => {
+    setCartCount(cartCount + 1);
+  };
+
   const products = [
     {
       id: 1,
@@ -40,7 +49,7 @@ function App() {
   return (
     <div className="bg-slate-100 min-h-screen">
 
-      <Navbar />
+      <Navbar cartCount={cartCount} />
 
       <Hero />
 
@@ -58,6 +67,7 @@ function App() {
               name={product.name}
               price={product.price}
               image={product.image}
+              addToCart={addToCart}
             />
           ))}
 
