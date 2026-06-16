@@ -3,7 +3,10 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
-
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ProductCard from "./components/ProductCard";
 function App() {
 
   const [cartCount, setCartCount] = useState(0);
