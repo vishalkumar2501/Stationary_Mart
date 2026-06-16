@@ -10,6 +10,12 @@ import ProductCard from "./components/ProductCard";
 function App() {
 
   const [cartCount, setCartCount] = useState(0);
+  const [cartCount, setCartCount] = useState(0);
+
+const [searchTerm, setSearchTerm] = useState("");
+
+const [selectedCategory, setSelectedCategory] =
+  useState("All");
 
   const addToCart = () => {
     setCartCount(cartCount + 1);
