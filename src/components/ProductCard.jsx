@@ -5,6 +5,43 @@ const categories = [
   "Marker",
   "Pencil",
 ];
+const products = [
+  {
+    id: 1,
+    name: "Notebook",
+    price: 120,
+    category: "Notebook",
+    image:
+      "https://images.unsplash.com/photo-1531346680769-a1d79b57de5c?w=600",
+  },
+
+  {
+    id: 2,
+    name: "Pen",
+    price: 25,
+    category: "Pen",
+    image:
+      "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=600",
+  },
+
+  {
+    id: 3,
+    name: "Marker",
+    price: 45,
+    category: "Marker",
+    image:
+      "https://images.unsplash.com/photo-1517842645767-c639042777db?w=600",
+  },
+
+  {
+    id: 4,
+    name: "Pencil",
+    price: 15,
+    category: "Pencil",
+    image:
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=600",
+  },
+];
 const ProductCard = ({
   name,
   price,
