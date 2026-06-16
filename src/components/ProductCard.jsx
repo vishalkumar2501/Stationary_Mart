@@ -1,3 +1,10 @@
+const categories = [
+  "All",
+  "Notebook",
+  "Pen",
+  "Marker",
+  "Pencil",
+];
 const ProductCard = ({
   name,
   price,
