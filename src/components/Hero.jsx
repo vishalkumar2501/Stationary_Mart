@@ -22,5 +22,18 @@ const Hero = () => {
     </section>
   );
 };
+<div className="max-w-7xl mx-auto px-6 mt-10">
+
+  <input
+    type="text"
+    placeholder="Search Products..."
+    value={searchTerm}
+    onChange={(e) =>
+      setSearchTerm(e.target.value)
+    }
+    className="w-full p-4 border rounded-xl"
+  />
+
+</div>
 
 export default Hero;
