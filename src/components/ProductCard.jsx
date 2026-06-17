@@ -73,6 +73,15 @@ const ProductCard = ({
         >
           Add To Cart
         </button>
+        <p className="text-center mt-10 mb-6">
+
+  Showing
+  {" "}
+  {filteredProducts.length}
+  {" "}
+  Products
+
+</p>
 
       </div>
     </div>
